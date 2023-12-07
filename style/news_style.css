@@ -1,0 +1,136 @@
+.news-container {
+    position: relative;
+    display: grid;
+    gap: 2vh;
+    align-items: center;
+    margin: 20px auto;
+    padding: 3vh;
+    padding-top: 2vh;
+    background-color: transparent;
+    border-radius: 30px;
+    justify-items: center;
+}
+
+.header {
+    grid-column: 1/3;
+}
+
+main {
+    width: 85vw;
+}
+
+
+.news-div {
+    grid-column-gap: 50px;
+    display: grid;
+    align-items: start;
+    justify-items: start;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    position: relative;
+    width: 85%;
+    padding: 50px;
+    border-radius: 20px;
+    height: 22vh;
+    background-color: #17132499;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.news-div:hover {
+    background-color: rgba(40, 33, 63, 0.6);
+    transform: scale(1.05);
+}
+
+/* Добавляем стили для заголовка и текста при наведении */
+.news-div:hover .h {
+    color: #e7a52b;
+}
+
+.news-div:hover .text {
+    color: #e3bb71;
+}
+
+/* Добавляем стили для изображения при наведении */
+.news-div:hover .image img {
+    filter: grayscale(0%);
+}
+
+/*!* Дополнительные стили для изображения *!*/
+/*.news-div .image img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    transition: filter 0.3s;*/
+/*}*/
+
+.h {
+    font-family: "Gotham Pro", sans-serif;
+    margin: 0;
+    font-size: 35px;
+    grid-column: 1;
+    grid-row: 1;
+    color: white;
+}
+
+.text {
+    font-family: "Gotham Pro", sans-serif;
+    color: white;
+    margin: 0;
+    padding-top: 40px;
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+.image {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.image img {
+    height: 22vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*компура*/
+@media (min-width: 1281px) {
+
+    .header {
+        grid-column: 1/3;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .h {
+        font-size: 25px;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/*мобила*/
+@media (max-width: 1280px) {
+
+    .header {
+        grid-column: 1;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+
+    .h {
+        font-size: 18px;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+}

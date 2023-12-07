@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/header_style.css">
+    <link rel="stylesheet" href="style/convertor_style.css">
+    <link rel="icon" href="src/fav.png">
+    <title>Конвертор криптовалют</title>
+</head>
+
+<body>
+
+<div class="nav">
+    <nav>
+        <ul id="nav_menu" class="desktop-menu">
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="currency.html">Информация о рынке</a></li>
+            <li><a href="main.html"><img id="icon_header" src="src/logo.png" class="logo"></a></li>
+            <li><a href="stocks.html">Список бирж</a></li>
+            <li><a href="convertor.html">Конвертор валют</a></li>
+        </ul>
+        <label class="burger-button" for="burger-checkbox"></label>
+        <input type="checkbox" id="burger-checkbox">
+        <ul class="mobile-menu">
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="currency.html">Информация о рынке</a></li>
+            <li><a href="stocks.html">Список бирж</a></li>
+            <li><a href="convertor.html">Конвертор валют</a></li>
+        </ul>
+    </nav>
+</div>
+
+<main>
+<!--    <img id="background-png" src="src/background.png" alt="">-->
+
+    <div class="convertor-container">
+        <h1 class="header">Конвертор валют</h1>
+
+        <div class="currency-block">
+            <form>
+                <label for="cryptocurrency-left">Выберите криптовалюту:</label>
+                <select id="cryptocurrency-left" name="cryptocurrency-left">
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="ripple">Ripple</option>
+                    <option value="litecoin">Litecoin</option>
+                    <option value="cardano">Cardano</option>
+                    <option value="polkadot">Polkadot</option>
+                    <option value="binancecoin">Binance Coin</option>
+                    <option value="chainlink">Chainlink</option>
+                    <option value="stellar">Stellar</option>
+                    <option value="dogecoin">Dogecoin</option>
+                </select>
+
+                <label for="quantity-left">Введите количество:</label>
+                <input type="number" id="quantity-left" name="quantity-left" min="0.00000001" max="100">
+
+                <button id="convert-left-to-right-button" class="convert-button">Конвертировать</button>
+            </form>
+        </div>
+        <div class="currency-block">
+            <form>
+                <label for="cryptocurrency-right">Выберите криптовалюту:</label>
+                <select id="cryptocurrency-right" name="cryptocurrency-right">
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="ripple">Ripple</option>
+                    <option value="litecoin">Litecoin</option>
+                    <option value="cardano">Cardano</option>
+                    <option value="polkadot">Polkadot</option>
+                    <option value="binancecoin">Binance Coin</option>
+                    <option value="chainlink">Chainlink</option>
+                    <option value="stellar">Stellar</option>
+                    <option value="dogecoin">Dogecoin</option>
+                </select>
+
+                <label for="quantity-right">Введите количество:</label>
+                <input type="number" id="quantity-right" name="quantity-right" min="0.00000001" max="100">
+
+                <button id="convert-right-to-left-button" class="convert-button">Конвертировать</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/convertor_script.js"></script>
+</main>
+<footer>
+    <div>
+        <img id="footer-img" src="src/logo.png" class="logo">
+        <ul id="footer-menu" class="desktop-menu">
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="currency.html">Информация о рынке</a></li>
+            <li><a href="stocks.html">Список бирж</a></li>
+            <li><a href="convertor.html">Конвертор валют</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+}
+
+h3 {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    display: flex;
+justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Gotham Pro', sans-serif;
+}
+
+.desktop-menu, .mobile-menu {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+nav .burger-button::before {
+    content: "\2630";
+}
+
+nav .mobile-menu {
+    display: none;
+}
+
+nav input[type="checkbox"]:checked + .mobile-menu {
+    display: block;
+}
+
+nav ul.desktop-menu {
+    align-content: center;
+}
+
+nav ul.mobile-menu {
+    flex-direction: column;
+    background-color: #bdbdbd;
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    width: 30%;
+    padding: 20px 0;
+    display: none;
+    z-index: 99999999;
+}
+
+nav li {
+    display: flex;
+    margin-right: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    text-align: center;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+
+nav .burger-button {
+    font-size: 32px;
+    user-select: none;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    border-style: none;
+    background-color: #bdbdbd;
+    color: white;
+    width: 50px;
+    height: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .burger-button:hover {
+    color: #e7a52b;
+}
+
+#icon_header {
+    width: 115px;
+    height: 115px;
+    vertical-align: middle;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    background-color: #e7a52b;
+    color: #fff;
+}
+
+body {
+    color: white;
+    background-color: #0E0C13;
+}
+
+main {
+    width: 73vw;
+    margin: 0 auto;
+}
+
+#background-png {
+    position: absolute;
+    top: 250px;
+    left: -15%;
+    z-index: -100;
+}
+
+
+
+footer{
+    width: 73vw;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+}
+
+footer div ul {
+    gap: inherit;
+}
+
+footer div ul a {
+    font-family: "Gotham Pro", sans-serif;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:active {
+    background-color: #e7a52b;
+    color: #fff;
+}
+
+#footer-img {
+    width: 115px;
+    height: 115px;
+    vertical-align: middle;
+    margin-left: 50px;
+}
+
+
+
+@media (min-width: 1281px) {
+
+    .desktop-menu {
+        display: flex;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .burger-button {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+
+    .burger-button {
+        display: flex;
+    }
+
+    .burger-button:focus + .mobile-menu {
+        display: block;
+    }
+
+}

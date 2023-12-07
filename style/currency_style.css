@@ -1,0 +1,59 @@
+.currency-container {
+    margin: 20px auto;
+    position: relative;
+    display: grid;
+    gap: 2vh;
+    align-items: center;
+    padding: 2vh 3vh 3vh;
+    background-color: transparent;
+    justify-items: center;
+}
+
+main {
+    /*width: 85vw;*/
+}
+
+.currency {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 85%;
+    padding: 20px;
+    background-color: #17132499;
+    border-radius: 20px;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.currency .key {
+    color: #e7a52b;
+    min-width: 100px;
+    text-align: left;
+
+}
+
+.currency .price {
+    color: #4caf50;
+    min-width: 100px;
+    text-align: right;
+
+}
+
+.currency .name {
+    min-width: 100px;
+    text-align: center;
+}
+
+/*компура*/
+@media (min-width: 1281px) {
+
+
+}
+
+/*мобила*/
+@media (max-width: 1280px) {
+
+
+}

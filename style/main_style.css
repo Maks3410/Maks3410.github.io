@@ -1,0 +1,90 @@
+
+
+main h2 {
+    font-size: 46px;
+    color: white;
+    line-height: 73px;
+}
+
+main h3 {
+    font-weight: 600;
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+main p {
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+}
+
+.welcome-box {
+    margin: 0 0 60px 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    height: 376px;
+}
+
+.welcome-box h2 {
+    line-height: 44px;
+}
+
+.welcome-box p {
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.technologies-box {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.technologies-box h2 {
+    line-height: 74px;
+}
+
+.technologies-box p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.span1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.span2 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.glass-morphism-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #17132499;
+    height: 185px;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+
+.why-box {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.how-box {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
