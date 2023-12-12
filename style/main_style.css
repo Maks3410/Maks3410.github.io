@@ -1,4 +1,7 @@
-
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 main h2 {
     font-size: 46px;
@@ -87,4 +90,29 @@ main p {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.welcome-box {
+    height: fit-content;
+}
+
+@media (max-width: 960px) {
+    .wrapper{
+        grid-template-columns: 100%;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    main h3 {
+        font-size: 15px;
+    }
+    main p{
+        font-size: 13px;
+    }
+
+    main {
+        margin-top: 150px;
+    }
 }

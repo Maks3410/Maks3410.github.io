@@ -29,7 +29,7 @@ main {
     grid-template-rows: 1fr 3fr;
     position: relative;
     width: 85%;
-    padding: 50px;
+    padding: 30px;
     border-radius: 20px;
     height: 22vh;
     background-color: #17132499;
@@ -92,7 +92,6 @@ main {
     overflow: hidden;
 }
 
-/*компура*/
 @media (min-width: 1281px) {
 
     .header {
@@ -113,7 +112,6 @@ main {
 
 }
 
-/*мобила*/
 @media (max-width: 1280px) {
 
     .header {
@@ -132,5 +130,41 @@ main {
     .news-container {
         grid-template-columns: 1fr;
     }
+}
 
+@media (max-width: 900px) {
+    .text{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .text{
+        font-size: 11px;
+        padding-top: 10px;
+    }
+
+    .news-div{
+        width: 400px;
+    }
+    .news-div img{
+        height: 17vh;
+    }
+}
+
+@media (max-width: 530px) {
+    .header{
+        font-size: 20px;
+    }
+    .news-div{
+        width: 300px;
+    }
+    .text{
+        font-size: 9px;
+    }
+    .news-div img{
+        height: 12vh;
+    }
 }

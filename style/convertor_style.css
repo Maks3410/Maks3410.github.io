@@ -1,17 +1,35 @@
+@media (max-width: 600px) {
+    .convert-button{
+        font-size: 8px;
+        padding: 5px;
+    }
+    .currency-block{
+        width: 25vw;
+    }
+
+}
 .convertor-container {
     position: relative;
     display: grid;
     align-items: center;
     border-radius: 30px;
     justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: repeat(2, 1fr);
     margin: 20px auto;
     gap: 2vh;
     padding: 2vh 3vh 3vh;
     background-color: transparent;
 }
 
+@media (max-width: 1260px) {
+    .convertor-container{
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        align-items: center;
+        justify-items: center;
+    }
+
+}
 
 main {
     width: 73vw;

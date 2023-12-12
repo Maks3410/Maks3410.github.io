@@ -44,28 +44,36 @@ nav .burger-button::before {
     content: "\2630";
 }
 
-nav .mobile-menu {
+
+.mobile-menu {
     display: none;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 nav input[type="checkbox"]:checked + .mobile-menu {
     display: block;
+    transform: translateY(0);
 }
+
 
 nav ul.desktop-menu {
     align-content: center;
 }
 
-nav ul.mobile-menu {
+.mobile-menu {
     flex-direction: column;
-    background-color: #bdbdbd;
+    background-color: #0E0C13;
     position: fixed;
-    top: 70px;
-    right: 15px;
-    width: 30%;
-    padding: 20px 0;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
     display: none;
     z-index: 99999999;
+    font-size: 40px;
+    line-height: 100px;
 }
 
 nav li {
@@ -135,6 +143,10 @@ main {
     top: 250px;
     left: -15%;
     z-index: -100;
+    width: 120%; /* увеличьте ширину фона для покрытия большей области */
+    height: auto; /* автоматическая высота, чтобы сохранить пропорции */
+    background: url('src/background.png') no-repeat center center fixed;
+    background-size: cover; /* адаптировать размер фона */
 }
 
 
@@ -185,34 +197,64 @@ footer a:active {
 
 
 
+
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: transparent;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+
+#burger-toggle {
+    display: none;
+}
+
+#burger-toggle:checked + .burger-icon ~ .mobile-menu {
+    display: block;
+}
+
+
+
+
+
+
+
 @media (min-width: 1281px) {
 
     .desktop-menu {
         display: flex;
     }
-    .mobile-menu {
+
+    .burger-menu {
         display: none;
     }
-    .burger-button {
-        display: none;
-    }
+
 }
 
 @media (max-width: 1280px) {
-
+    .nav .desktop-menu li {
+        display: none;
+    }
     .desktop-menu {
         display: none;
     }
-    .mobile-menu {
+
+    .burger-menu {
         display: flex;
     }
-
-    .burger-button {
-        display: flex;
-    }
-
-    .burger-button:focus + .mobile-menu {
-        display: block;
+    main {
+        margin-top: 150px;
     }
 
 }
+

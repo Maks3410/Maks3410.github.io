@@ -20,15 +20,22 @@
             <li><a href="stocks.html">Список бирж</a></li>
             <li><a href="convertor.html">Конвертор валют</a></li>
         </ul>
-        <label class="burger-button" for="burger-checkbox"></label>
-        <input type="checkbox" id="burger-checkbox">
-        <ul class="mobile-menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="currency.html">Информация о рынке</a></li>
-            <li><a href="stocks.html">Список бирж</a></li>
-            <li><a href="convertor.html">Конвертор валют</a></li>
-        </ul>
+
+        <div class="burger-menu">
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger-icon">
+                <img src="src/logo.png" style="position: absolute; height: 115px; top:16px; left:-170%">
+            </label>
+
+            <ul class="mobile-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="currency.html">Информация о рынке</a></li>
+                <li><a href="stocks.html">Список бирж</a></li>
+                <li><a href="convertor.html">Конвертор валют</a></li>
+            </ul>
+        </div>
+
     </nav>
 </div>
 
@@ -36,11 +43,13 @@
     <img id="background-png" src="src/background.png" alt="">
 
     <div class="welcome-box">
-        <div>
-            <h2>Добро пожаловать на информационный портал, посвященный криптовалютам</h2>
-            <p>Мы создали этот ресурс для того, чтобы предоставить вам самую актуальную и полезную информацию о разнообразных аспектах криптовалютного мира. Наш информационный сайт призван стать вашим надежным проводником в этом инновационном мире, где каждый день приносит новые открытия и возможности.</p>
+        <div class="wrapper">
+            <div>
+                <h2>Добро пожаловать на информационный портал, посвященный криптовалютам</h2>
+                <p>Мы создали этот ресурс для того, чтобы предоставить вам самую актуальную и полезную информацию о разнообразных аспектах криптовалютного мира. Наш информационный сайт призван стать вашим надежным проводником в этом инновационном мире, где каждый день приносит новые открытия и возможности.</p>
+            </div>
+            <img src="src/sandglass.png" alt="Sandglass&Bitcoin">
         </div>
-        <img src="src/sandglass.png" alt="Sandglass&Bitcoin">
     </div>
 
     <div class="technologies-box">
