@@ -167,4 +167,8 @@ input[type="reset"]:hover {
         width: calc(100vw - 40px);
     }
 
+    .currency-block {
+        width: auto;
+    }
+
 }
