@@ -20,15 +20,21 @@
             <li><a href="stocks.html">Список бирж</a></li>
             <li><a href="convertor.html">Конвертор валют</a></li>
         </ul>
-        <label class="burger-button" for="burger-checkbox"></label>
-        <input type="checkbox" id="burger-checkbox">
-        <ul class="mobile-menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="currency.html">Информация о рынке</a></li>
-            <li><a href="stocks.html">Список бирж</a></li>
-            <li><a href="convertor.html">Конвертор валют</a></li>
-        </ul>
+
+        <div class="burger-menu">
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger-icon">
+                <img src="src/logo.png" style="position: absolute; height: 115px; top:16px; left:-170%">
+            </label>
+
+            <ul class="mobile-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="currency.html">Информация о рынке</a></li>
+                <li><a href="stocks.html">Список бирж</a></li>
+                <li><a href="convertor.html">Конвертор валют</a></li>
+            </ul>
+        </div>
     </nav>
     <script src="script/burger.js"></script>
 </div>

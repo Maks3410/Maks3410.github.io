@@ -96,7 +96,7 @@ main p {
     height: fit-content;
 }
 
-/* Медиазапрос для экранов шириной до 768px включительно (планшеты) */
+/* Планшеты */
 @media (max-width: 768px) {
     .wrapper{
         grid-template-columns: 100%;
@@ -131,10 +131,14 @@ main p {
 
 }
 
-/* Медиазапрос для экранов шириной до 480px включительно (мобильные устройства) */
+/* Мобильные устройства */
 @media (max-width: 480px) {
     main {
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .welcome-box .wrapper div h2 {
+        font-size: 36px;
     }
 }

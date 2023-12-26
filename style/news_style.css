@@ -140,7 +140,7 @@ main {
 
 }
 
-@media (max-width: 730px) {
+@media (max-width: 768px) {
     .text{
         font-size: 11px;
         padding-top: 10px;
@@ -154,7 +154,7 @@ main {
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 480px) {
     .header{
         font-size: 20px;
     }
@@ -166,5 +166,11 @@ main {
     }
     .news-div img{
         height: 12vh;
+    }
+    .image {
+        grid-row: 2;
+    }
+    .h {
+        grid-column: 1/3;
     }
 }

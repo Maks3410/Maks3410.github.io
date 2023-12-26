@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let button = document.getElementById("burger-toggle");
-    let myMain = document.getElementById('my-main');
+    let myMain = document.querySelector('main');
     let footerImg = document.getElementById('footer-img');
 
     button.onclick = function (e) {
