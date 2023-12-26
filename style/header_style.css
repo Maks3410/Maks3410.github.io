@@ -72,8 +72,8 @@ nav ul.desktop-menu {
     padding: 80px;
     display: none;
     z-index: 99999999;
-    font-size: 40px;
-    line-height: 100px;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 nav li {
@@ -143,7 +143,7 @@ main {
     top: 250px;
     left: -15%;
     z-index: -100;
-    width: 120%; /* увеличьте ширину фона для покрытия большей области */
+    width: 110vw; /* увеличьте ширину фона для покрытия большей области */
     height: auto; /* автоматическая высота, чтобы сохранить пропорции */
     background: url('src/background.png') no-repeat center center fixed;
     background-size: cover; /* адаптировать размер фона */

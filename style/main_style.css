@@ -96,7 +96,8 @@ main p {
     height: fit-content;
 }
 
-@media (max-width: 960px) {
+/* Медиазапрос для экранов шириной до 768px включительно (планшеты) */
+@media (max-width: 768px) {
     .wrapper{
         grid-template-columns: 100%;
     }
@@ -114,5 +115,26 @@ main p {
 
     main {
         margin-top: 150px;
+    }
+
+    .glass-morphism-div p{
+        line-height: 16px;
+    }
+
+    .glass-morphism-div h3 {
+        line-height: 16px;
+    }
+
+    .welcome-box img {
+        max-width: 80vw;
+    }
+
+}
+
+/* Медиазапрос для экранов шириной до 480px включительно (мобильные устройства) */
+@media (max-width: 480px) {
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
