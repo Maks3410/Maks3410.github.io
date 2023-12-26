@@ -139,6 +139,12 @@ main p {
     }
 
     .welcome-box .wrapper div h2 {
-        font-size: 36px;
+        font-size: 32px;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
     }
 }

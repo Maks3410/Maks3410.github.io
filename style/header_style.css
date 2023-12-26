@@ -254,6 +254,9 @@ footer a:active {
     }
     main {
         margin-top: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
     }
 
 }
